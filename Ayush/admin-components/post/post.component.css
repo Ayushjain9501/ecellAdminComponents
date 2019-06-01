@@ -1,0 +1,36 @@
+.top
+{
+  position : fixed;
+  width : 100%;
+  top : 0;
+  right : 0;
+}
+
+.down
+{
+  position : fixed;
+  width : 100%;
+  bottom : 0;
+  right : 0;
+}
+
+.content
+{
+  margin:20px;
+  padding : 60px;
+  
+}
+
+.example-container {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.example-container > * {
+  width: 100%;
+}
+
+button {
+  margin-right : 10px;
+}

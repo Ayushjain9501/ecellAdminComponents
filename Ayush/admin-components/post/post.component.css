@@ -18,13 +18,15 @@
 {
   margin:20px;
   padding : 60px;
+  min-height : 700px;
   
 }
 
 .example-container {
-  padding-top: 20px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
+  border : 2px solid black;
 }
 
 .example-container > * {
@@ -33,4 +35,5 @@
 
 button {
   margin-right : 10px;
+  margin-bottom : 20px;
 }

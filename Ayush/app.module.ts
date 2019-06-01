@@ -29,6 +29,7 @@ import { AdminnavbarComponent } from './components/admin-components/adminnavbar/
 import { MatTableModule, MatPaginatorModule, MatSortModule } from '@angular/material';
 import { DatatableComponent } from './components/admin-components/datatable/datatable.component';
 import { PostComponent } from "./components/admin-components/post/post.component";
+import { PostsTableComponent } from './components/admin-components/posts-table/posts-table.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { PostComponent } from "./components/admin-components/post/post.component
     AdmintaskComponent,
     AdminnavbarComponent,
     DatatableComponent,
-    PostComponent
+    PostComponent,
+    PostsTableComponent
   ],
   imports: [
     BrowserModule,

@@ -1,11 +1,13 @@
 import { Component, OnInit } from "@angular/core";
 import { FormControl, Validators } from "@angular/forms"
-import { supportsWebAnimations } from '@angular/animations/browser/src/render/web_animations/web_animations_driver';
+
 @Component({
   selector: "app-post",
   templateUrl: "./post.component.html",
   styleUrls: ["./post.component.css"]
 })
+
+
 export class PostComponent implements OnInit {
   create_is_clicked: boolean = false;
   text = "Create";

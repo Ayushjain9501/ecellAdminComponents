@@ -1,0 +1,37 @@
+<div class="top">
+  <app-adminnavbar></app-adminnavbar>
+</div>
+<div class="content">
+  <button mat-raised-button color="accent" (click)="create()">
+    {{ text }}
+  </button>
+  <button mat-raised-button color="accent" (click)="submit()" *ngIf="create_is_clicked">
+    Submit
+  </button>
+
+  <div *ngIf="create_is_clicked">
+    <div class="example-container">
+
+      <mat-form-field>
+        <input matInput placeholder="Post ID" [formControl]="IDFormControl" [(ngModel)]="post_id" required />
+        <mat-error *ngIf="IDFormControl.hasError('required')">
+          <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="Expiration Time" type="number" [formControl]="NameFormControl"
+          [(ngModel)]="post_time" required />
+        <mat-error *ngIf="NameFormControl.hasError('required')">
+          <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+
+      <h1>{{post_id}}</h1>
+      <h1>{{post_time}}</h1>
+    </div>
+  </div>
+</div>
+<div class="down">
+  <app-footer></app-footer>
+</div>

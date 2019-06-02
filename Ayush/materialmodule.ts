@@ -12,9 +12,11 @@ import { MatChipsModule } from '@angular/material/chips';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { ReactiveFormsModule } from "@angular/forms";
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from "@angular/material";
 
 @NgModule({
-  imports: [MatButtonModule, MatChipsModule, MatListModule, MatDividerModule, MatGridListModule, MatCardModule, MatCheckboxModule, MatToolbarModule, MatIconModule, MatSidenavModule, MatMenuModule, MatFormFieldModule, MatInputModule, ReactiveFormsModule],
-  exports: [MatButtonModule, MatChipsModule, MatListModule, MatDividerModule, MatGridListModule, MatCardModule, MatCheckboxModule, MatToolbarModule, MatIconModule, MatSidenavModule, MatMenuModule, MatFormFieldModule, MatInputModule, ReactiveFormsModule]
+  imports: [MatButtonModule, MatChipsModule, MatListModule, MatDividerModule, MatGridListModule, MatCardModule, MatCheckboxModule, MatToolbarModule, MatIconModule, MatSidenavModule, MatMenuModule, MatFormFieldModule, MatInputModule, ReactiveFormsModule, MatDatepickerModule, MatNativeDateModule],
+  exports: [MatButtonModule, MatChipsModule, MatListModule, MatDividerModule, MatGridListModule, MatCardModule, MatCheckboxModule, MatToolbarModule, MatIconModule, MatSidenavModule, MatMenuModule, MatFormFieldModule, MatInputModule, ReactiveFormsModule, MatDatepickerModule, MatNativeDateModule]
 })
 export class MaterialModule { }

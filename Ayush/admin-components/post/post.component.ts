@@ -1,27 +1,18 @@
 import { Component, OnInit } from "@angular/core";
-import { FormControl, Validators } from "@angular/forms"
+import { FormControl, Validators } from "@angular/forms";
 
 @Component({
   selector: "app-post",
   templateUrl: "./post.component.html",
   styleUrls: ["./post.component.css"]
 })
-
-
 export class PostComponent implements OnInit {
   create_is_clicked: boolean = false;
   text = "Create";
   post_id: string = "";
-  post_time: number;
-  exp_time = 0;
+  post_time = new FormControl(new Date());
 
-  IDFormControl = new FormControl('', [
-    Validators.required
-  ]);
-
-  NameFormControl = new FormControl('', [
-    Validators.required
-  ]);
+  IDFormControl = new FormControl("", [Validators.required]);
 
 
   constructor() { }
@@ -36,10 +27,6 @@ export class PostComponent implements OnInit {
     } else {
       this.text = "Create";
     }
-
-
   }
-  submit(): void {
-
-  }
+  submit(): void { }
 }
